@@ -41,7 +41,7 @@ public class CustomerService {
 	}
 
 	public Customer find(Long id) {
-		return repository.findOne(id);
+		return repository.findById(id).get();
 	}
 
 	public Customer findByName(String name) {
